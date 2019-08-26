@@ -135,7 +135,7 @@ html {
   margin: 0 auto;
 }
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-family: 'Ranchers', cursive;
 }
 h2,
@@ -151,21 +151,26 @@ p,
   font-family: 'Nunito', sans-serif;
 }
 /******************** FONT-FAMILIES TO CHOOSE FROM ********************/
-.navBar {
+header .navBar {
   border: 2px solid red;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  align-items: center;
+  max-width: 100%;
 }
-.navBar h1 {
+header .navBar h1 {
   border: 2px solid blue;
-  width: 50%;
+  width: 25%;
+  margin: 2%;
 }
-.navBar nav {
+header .navBar nav {
   border: 2px solid blue;
-  width: 50%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
 }
-.navBar nav a {
+header .navBar nav a {
   border: 2px solid green;
 }
 .homeContainer {

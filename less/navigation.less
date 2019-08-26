@@ -1,15 +1,22 @@
-.navBar{
+header .navBar{
     border: @main;
     .flexbox();
+    max-width: 100%;
+
     h1{
         border: @component;
-        width: 50%;
-        // margin: 0 auto;
+        // text-align: center;
+        width: 25%;
+        margin: 2%;
     }
+
     nav{
         border: @component;
-        width: 50%;
-        // margin: 0 auto;
+        width: 80%;
+        // padding: 1% 0;
+        .flexbox();
+        flex-direction: row;
+        justify-content: space-around;
         a{
             border: @items;
         }
