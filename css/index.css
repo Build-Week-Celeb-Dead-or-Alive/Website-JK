@@ -1,6 +1,6 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+v2.0 | 20110126
+License: none (public domain)
 */
 html,
 body,
@@ -131,7 +131,8 @@ table {
 }
 html {
   font-size: 62.5%;
-  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
 }
 h1 {
   font-size: 3rem;
@@ -150,6 +151,23 @@ p,
   font-family: 'Nunito', sans-serif;
 }
 /******************** FONT-FAMILIES TO CHOOSE FROM ********************/
+.navBar {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.navBar h1 {
+  border: 2px solid blue;
+  width: 50%;
+}
+.navBar nav {
+  border: 2px solid blue;
+  width: 50%;
+}
+.navBar nav a {
+  border: 2px solid green;
+}
 .homeContainer {
   margin: 0, auto;
 }
