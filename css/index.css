@@ -126,6 +126,33 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  width: 100%;
+}
+h1 {
+  font-size: 3rem;
+  font-family: 'Ranchers', cursive;
+}
+h2,
+h3,
+nav a {
+  font-size: 2rem;
+  font-family: 'Nunito', sans-serif;
+}
+p,
+.button,
+.copyright {
+  font-size: 1.3rem;
+  font-family: 'Nunito', sans-serif;
+}
+/******************** FONT-FAMILIES TO CHOOSE FROM ********************/
+.homeContainer {
+  margin: 0, auto;
+}
 img {
   width: 200px;
 }
