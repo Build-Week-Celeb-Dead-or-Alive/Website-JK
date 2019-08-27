@@ -1,15 +1,25 @@
 .lights{
     width: 100%;
+
+    @media @phone{
+        display: none;
+    }
 }
 
 .aboutContainer{
     width:90%;
     margin-top: 3%;
     border-top: 1px dashed black;
+
     h2{
         color:@magenta;
         padding-top: 3%;
         margin-bottom: 3%;
+
+        @media @phone{
+            padding: 5% 0;
+            text-align: center;
+        }
     }
 
     .team{
@@ -19,11 +29,27 @@
         width:100%;
         justify-content: space-between;
 
+        @media @phone{
+            flex-direction: column;
+            border-bottom: none;
+        }
+
         .person{
             // border:@main;
             .flexbox();
             width: 48%;
             margin-bottom: 3%;
+
+            @media @tablet{
+                flex-direction: column;
+                align-items: center;
+            }
+
+            @media @phone{
+                width:100%;
+                border-bottom: 1px dashed black;
+                margin-bottom: 5%;
+            }
     
             img{
                 // border:@component;
@@ -33,6 +59,14 @@
             .info{
                 // border:@component;
                 width: 50%;
+
+                @media @tablet{
+                    width: 80%;
+                }
+
+                @media @phone{
+                    // width: 200%;
+                }
     
                 h3, p, i{
                     // border:@items;
