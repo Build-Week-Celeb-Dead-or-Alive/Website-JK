@@ -4,15 +4,23 @@ header .navBar{
     align-items: flex-end;
     max-width: 100%;
     background:rgba(255, 255, 255, 0.671);
-    // #04a1d3
-    // rgba(255, 255, 255, 0.671);
     position:fixed;
     width: 100%;
+
+    @media @tablet{
+        flex-direction: column;
+    }
 
     h1{
         // border: @component;
         width: 100%;
         margin: 2%;
+
+        @media @tablet{
+            margin: 0 auto;
+            text-align: center;
+            padding: 2%;
+        }
     }
 
     nav{
@@ -24,6 +32,10 @@ header .navBar{
         flex-direction: row;
         justify-content: space-around;
 
+        @media @tablet{
+            margin:0;
+            padding: 2%;
+        }
 
         a{
         // border: @items;

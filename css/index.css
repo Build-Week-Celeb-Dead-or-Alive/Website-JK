@@ -166,9 +166,21 @@ header .navBar {
   position: fixed;
   width: 100%;
 }
+@media (max-width: 800px) {
+  header .navBar {
+    flex-direction: column;
+  }
+}
 header .navBar h1 {
   width: 100%;
   margin: 2%;
+}
+@media (max-width: 800px) {
+  header .navBar h1 {
+    margin: 0 auto;
+    text-align: center;
+    padding: 2%;
+  }
 }
 header .navBar nav {
   width: 100%;
@@ -178,6 +190,12 @@ header .navBar nav {
   align-items: center;
   flex-direction: row;
   justify-content: space-around;
+}
+@media (max-width: 800px) {
+  header .navBar nav {
+    margin: 0;
+    padding: 2%;
+  }
 }
 header .navBar nav a {
   text-decoration: none;
