@@ -178,13 +178,39 @@ header .navBar nav a {
   text-decoration: none;
   color: #000;
 }
+footer {
+  padding-top: 2%;
+  background: #000;
+}
+footer .navBar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+footer .navBar nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 70%;
+  padding: 1%;
+}
+footer .navBar nav a {
+  color: #fff;
+  text-decoration: none;
+}
+footer .navBar .copyright {
+  color: #fff;
+  padding: 1%;
+  margin-top: 2%;
+}
 body div {
-  border: 2px solid red;
   margin: 0 auto;
   width: 80%;
 }
 .homeContainer {
-  border: 2px solid red;
+  border: 2px solid blue;
   width: 100%;
 }
 .homeContainer img {
