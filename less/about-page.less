@@ -1,0 +1,45 @@
+.lights{
+    width: 100%;
+}
+
+.aboutContainer{
+    width:90%;
+    margin-top: 3%;
+    border-top: 1px dashed black;
+    h2{
+        color:@magenta;
+        padding-top: 3%;
+        margin-bottom: 2%;
+    }
+
+    .team{
+        border: 2px solid yellow;
+        .flexbox();
+        flex-wrap: wrap;
+        width:100%;
+        justify-content: space-between;
+        padding-top: 3%;
+        // padding-bottom: 3%;
+
+        .person{
+            border:@main;
+            .flexbox();
+            width: 48%;
+            margin-bottom: 3%;
+    
+            img{
+                border:@component;
+            }
+    
+            .info{
+                border:@component;
+                width: 50%;
+    
+                h3, p, i{
+                    border:@items;
+                    margin: 5%;
+                }
+            }
+        }
+    }
+}
