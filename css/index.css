@@ -207,12 +207,47 @@ footer .navBar .copyright {
 }
 body div {
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
 }
 .homeContainer {
-  border: 2px solid blue;
+  border: 2px solid red;
   width: 100%;
 }
-.homeContainer img {
+.homeContainer .hollywood {
   width: 100%;
+}
+.homeContainer .pic {
+  width: 45%;
+}
+.homeContainer .topcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3%;
+  padding: 3% 0;
+  border-top: 1px dashed black;
+  border-bottom: 1px dashed black;
+}
+.homeContainer .topcontainer .text {
+  width: 50%;
+}
+.homeContainer .midcontainer {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding: 3% 0;
+  border-bottom: 1px dashed black;
+}
+.homeContainer .midcontainer .text {
+  width: 50%;
+}
+.homeContainer .botcontainer {
+  display: flex;
+  align-items: center;
+  padding: 3% 0;
+  border-bottom: 1px dashed black;
+  margin-bottom: 5%;
+}
+.homeContainer .botcontainer .text {
+  width: 50%;
 }

@@ -1,15 +1,95 @@
 body div{
-    // border: @main;
     margin: 0 auto;
-    width:80%;
+    width:90%;
 }
 
 .homeContainer{
-    border:@component;
+    border:@main;
     width:100%;
 
-    img{
-    width: 100%;
+    .hollywood{
+        width:100%;
+    }
+
+    .pic{
+    width: 45%;
+    }
+
+    .topcontainer{
+        // border:@main;
+        .flexbox();
+        justify-content: space-between;
+        margin-top: 3%;
+        padding:3% 0;
+        border-top: 1px dashed black;
+        border-bottom: 1px dashed black;
+
+        img{
+            // border:@component;
+        }
+
+        .text{
+            // border:@items;
+            width:50%;
+        }
+
+        h2{
+            // border:@items;
+        }
+
+        p{
+            // border:@items;
+        }
+    }
+
+    .midcontainer{
+        // border:@main;
+        .flexbox();
+        flex-direction: row-reverse;
+        padding: 3% 0;
+        border-bottom: 1px dashed black;
+
+        img{
+            // border:@component;
+        }
+
+        .text{
+            // border:@items;
+            width:50%;
+        }
+
+        h2{
+            // border:@items;
+        }
+
+        p{
+            // border:@items;
+        }
+    }
+
+    .botcontainer{
+        // border:@main;
+        .flexbox();
+        padding:3% 0;
+        border-bottom: 1px dashed black;
+        margin-bottom: 5%;
+
+        img{
+            // border:@component;
+        }
+
+        .text{
+            // border:@items;
+            width:50%;
+        }
+
+        h2{
+            // border:@items;
+        }
+
+        p{
+            // border:@items;
+        }
     }
 }
 
