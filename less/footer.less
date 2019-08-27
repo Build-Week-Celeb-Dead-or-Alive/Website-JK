@@ -1,7 +1,8 @@
 footer{
     // border:@main;
     padding-top: 2%;
-    background: #000;
+    background:@blue;
+    margin-top: 3%;
 
     .navBar{
         // border:2px solid rgb(255, 238, 0);
@@ -21,6 +22,12 @@ footer{
                 color: #fff;
                 text-decoration: none;
                 // border:@items;
+                transition: color .5s;
+                &:hover{
+                    color: @magenta;
+                    // text-decoration: overline;
+                    transition: color .5s;
+                }
             }
         }
         .copyright{

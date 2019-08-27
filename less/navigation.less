@@ -3,7 +3,9 @@ header .navBar{
     .flexbox();
     align-items: flex-end;
     max-width: 100%;
-    background: rgba(255, 255, 255, 0.671);
+    background:rgba(255, 255, 255, 0.671);
+    // #04a1d3
+    // rgba(255, 255, 255, 0.671);
     position:fixed;
     width: 100%;
 
@@ -27,6 +29,12 @@ header .navBar{
         // border: @items;
         text-decoration: none;
         color:#000;
+        transition: color .5s;
+        &:hover{
+            color: @magenta;
+            // text-decoration: overline;
+            transition: color .5s;
+        }
         }
     }
 }

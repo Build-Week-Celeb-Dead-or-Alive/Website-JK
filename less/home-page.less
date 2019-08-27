@@ -4,10 +4,12 @@ body div{
 }
 
 .homeContainer{
-    border:@main;
+    // border:@main;
     width:100%;
+    .flexbox();
+    flex-direction: column;
 
-    .hollywood{
+    .confetti{
         width:100%;
     }
 
@@ -18,27 +20,20 @@ body div{
     .topcontainer{
         // border:@main;
         .flexbox();
-        justify-content: space-between;
         margin-top: 3%;
         padding:3% 0;
         border-top: 1px dashed black;
         border-bottom: 1px dashed black;
 
-        img{
-            // border:@component;
-        }
-
         .text{
             // border:@items;
-            width:50%;
+            width:45%;
         }
 
         h2{
             // border:@items;
-        }
-
-        p{
-            // border:@items;
+            margin-bottom: 5%;
+            color: @magenta;
         }
     }
 
@@ -49,21 +44,15 @@ body div{
         padding: 3% 0;
         border-bottom: 1px dashed black;
 
-        img{
-            // border:@component;
-        }
-
         .text{
             // border:@items;
-            width:50%;
+            width:45%;
         }
 
         h2{
             // border:@items;
-        }
-
-        p{
-            // border:@items;
+            margin-bottom: 5%;
+            color: @magenta;
         }
     }
 
@@ -72,23 +61,33 @@ body div{
         .flexbox();
         padding:3% 0;
         border-bottom: 1px dashed black;
-        margin-bottom: 5%;
-
-        img{
-            // border:@component;
-        }
+        margin-bottom: 3%;
 
         .text{
             // border:@items;
-            width:50%;
+            width:45%;
         }
 
         h2{
             // border:@items;
+            margin-bottom: 5%;
+            color: @magenta;
         }
+    }
 
-        p{
-            // border:@items;
+    .button{
+        background: @magenta;
+        margin: 0 auto;
+        padding: 2% 5%;
+        text-decoration: none;
+        color: white;
+        border-radius: 2rem;
+        transition: background-color .5s;
+        
+        &:hover{
+            color: @magenta;
+            background-color: white;
+            transition: background-color .5s;
         }
     }
 }

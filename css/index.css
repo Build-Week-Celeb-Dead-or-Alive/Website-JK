@@ -131,6 +131,7 @@ table {
 }
 html,
 body {
+  max-height: 100%;
   font-size: 62.5%;
   max-width: 100%;
   margin: 0 auto;
@@ -140,15 +141,18 @@ h1 {
   font-family: 'Ranchers', cursive;
 }
 h2,
-h3,
-nav a {
-  font-size: 2rem;
+h3 {
+  font-size: 3rem;
+  font-family: 'Nunito', sans-serif;
+}
+nav a,
+.button {
+  font-size: 2.8rem;
   font-family: 'Nunito', sans-serif;
 }
 p,
-.button,
 .copyright {
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-family: 'Nunito', sans-serif;
 }
 /******************** FONT-FAMILIES TO CHOOSE FROM ********************/
@@ -177,10 +181,16 @@ header .navBar nav {
 header .navBar nav a {
   text-decoration: none;
   color: #000;
+  transition: color 0.5s;
+}
+header .navBar nav a:hover {
+  color: #d71c98;
+  transition: color 0.5s;
 }
 footer {
   padding-top: 2%;
-  background: #000;
+  background: #016379;
+  margin-top: 3%;
 }
 footer .navBar {
   display: flex;
@@ -199,6 +209,11 @@ footer .navBar nav {
 footer .navBar nav a {
   color: #fff;
   text-decoration: none;
+  transition: color 0.5s;
+}
+footer .navBar nav a:hover {
+  color: #d71c98;
+  transition: color 0.5s;
 }
 footer .navBar .copyright {
   color: #fff;
@@ -210,10 +225,12 @@ body div {
   width: 90%;
 }
 .homeContainer {
-  border: 2px solid red;
   width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-.homeContainer .hollywood {
+.homeContainer .confetti {
   width: 100%;
 }
 .homeContainer .pic {
@@ -222,14 +239,17 @@ body div {
 .homeContainer .topcontainer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   margin-top: 3%;
   padding: 3% 0;
   border-top: 1px dashed black;
   border-bottom: 1px dashed black;
 }
 .homeContainer .topcontainer .text {
-  width: 50%;
+  width: 45%;
+}
+.homeContainer .topcontainer h2 {
+  margin-bottom: 5%;
+  color: #d71c98;
 }
 .homeContainer .midcontainer {
   display: flex;
@@ -239,15 +259,37 @@ body div {
   border-bottom: 1px dashed black;
 }
 .homeContainer .midcontainer .text {
-  width: 50%;
+  width: 45%;
+}
+.homeContainer .midcontainer h2 {
+  margin-bottom: 5%;
+  color: #d71c98;
 }
 .homeContainer .botcontainer {
   display: flex;
   align-items: center;
   padding: 3% 0;
   border-bottom: 1px dashed black;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 .homeContainer .botcontainer .text {
-  width: 50%;
+  width: 45%;
+}
+.homeContainer .botcontainer h2 {
+  margin-bottom: 5%;
+  color: #d71c98;
+}
+.homeContainer .button {
+  background: #d71c98;
+  margin: 0 auto;
+  padding: 2% 5%;
+  text-decoration: none;
+  color: white;
+  border-radius: 2rem;
+  transition: background-color 0.5s;
+}
+.homeContainer .button:hover {
+  color: #d71c98;
+  background-color: white;
+  transition: background-color 0.5s;
 }
