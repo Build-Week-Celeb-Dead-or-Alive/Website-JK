@@ -306,34 +306,42 @@ body div {
 .aboutContainer h2 {
   color: #d71c98;
   padding-top: 3%;
-  margin-bottom: 2%;
+  margin-bottom: 3%;
 }
 .aboutContainer .team {
-  border: 2px solid yellow;
+  border-bottom: 1px dashed black;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
-  padding-top: 3%;
 }
 .aboutContainer .team .person {
-  border: 2px solid red;
   display: flex;
   align-items: center;
   width: 48%;
   margin-bottom: 3%;
 }
 .aboutContainer .team .person img {
-  border: 2px solid blue;
+  border-radius: 2rem;
 }
 .aboutContainer .team .person .info {
-  border: 2px solid blue;
   width: 50%;
 }
 .aboutContainer .team .person .info h3,
 .aboutContainer .team .person .info p,
 .aboutContainer .team .person .info i {
-  border: 2px solid green;
   margin: 5%;
+}
+.aboutContainer .team .person .info i a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+.aboutContainer .team .person .info i a:hover {
+  color: #d71c98;
+  transition: color 0.5s;
+}
+.aboutContainer .team .person .info .fab {
+  color: #d71c98;
 }
