@@ -129,7 +129,8 @@ table {
 * {
   box-sizing: border-box;
 }
-html {
+html,
+body {
   font-size: 62.5%;
   max-width: 100%;
   margin: 0 auto;
@@ -152,30 +153,40 @@ p,
 }
 /******************** FONT-FAMILIES TO CHOOSE FROM ********************/
 header .navBar {
-  border: 2px solid red;
   display: flex;
   align-items: center;
+  align-items: flex-end;
   max-width: 100%;
+  background: rgba(255, 255, 255, 0.671);
+  position: fixed;
+  width: 100%;
 }
 header .navBar h1 {
-  border: 2px solid blue;
-  width: 25%;
+  width: 100%;
   margin: 2%;
 }
 header .navBar nav {
-  border: 2px solid blue;
-  width: 80%;
+  width: 100%;
+  margin-left: 15%;
+  margin-bottom: 2%;
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-around;
 }
 header .navBar nav a {
-  border: 2px solid green;
+  text-decoration: none;
+  color: #000;
+}
+body div {
+  border: 2px solid red;
+  margin: 0 auto;
+  width: 80%;
 }
 .homeContainer {
-  margin: 0, auto;
+  border: 2px solid red;
+  width: 100%;
 }
-img {
-  width: 200px;
+.homeContainer img {
+  width: 100%;
 }

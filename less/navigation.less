@@ -1,24 +1,32 @@
 header .navBar{
-    border: @main;
+    // border: @main;
     .flexbox();
+    align-items: flex-end;
     max-width: 100%;
+    background: rgba(255, 255, 255, 0.671);
+    position:fixed;
+    width: 100%;
 
     h1{
-        border: @component;
-        // text-align: center;
-        width: 25%;
+        // border: @component;
+        width: 100%;
         margin: 2%;
     }
 
     nav{
-        border: @component;
-        width: 80%;
-        // padding: 1% 0;
+        // border: @component;
+        width: 100%;
+        margin-left: 15%;
+        margin-bottom: 2%;
         .flexbox();
         flex-direction: row;
         justify-content: space-around;
+
+
         a{
-            border: @items;
+        // border: @items;
+        text-decoration: none;
+        color:#000;
         }
     }
 }
