@@ -11,6 +11,10 @@ header .navBar{
         flex-direction: column;
     }
 
+    @media @phone{
+        position: relative;
+    }
+
     h1{
         // border: @component;
         width: 100%;
@@ -20,6 +24,15 @@ header .navBar{
             margin: 0 auto;
             text-align: center;
             padding: 2%;
+        }
+
+        @media @phone{
+            // background-image: url("hollywood.jpg");
+            // background-color: black;
+            // color: white;
+            border-bottom: 1px dashed black;
+            background: @blue;
+            color: white;
         }
     }
 
@@ -37,6 +50,10 @@ header .navBar{
             padding: 2%;
         }
 
+        @media @phone{
+            flex-direction: column;
+        }
+
         a{
         // border: @items;
         text-decoration: none;
@@ -47,6 +64,11 @@ header .navBar{
             // text-decoration: overline;
             transition: color .5s;
         }
+
+        @media @phone{
+            margin: 3%;
+        }
+
         }
     }
 }

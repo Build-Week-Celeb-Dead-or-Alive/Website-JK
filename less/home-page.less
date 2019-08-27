@@ -11,11 +11,20 @@ body div{
 
     .confetti{
         width:100%;
+
+        @media @phone{
+            display: none;
+        }
     }
 
     .pic{
     width: 45%;
     border-radius: 2rem;
+
+    @media @phone{
+        width:90%;
+        margin: 5% 0;
+    }
     }
 
     .topcontainer{
@@ -26,9 +35,18 @@ body div{
         border-top: 1px dashed black;
         border-bottom: 1px dashed black;
 
+        @media @phone{
+            flex-direction: column;
+        }
+
         .text{
             // border:@items;
             width:45%;
+
+            @media @phone{
+                width:90%;
+                margin-bottom: 5%;
+            }
         }
 
         h2{
@@ -45,9 +63,18 @@ body div{
         padding: 3% 0;
         border-bottom: 1px dashed black;
 
+        @media @phone{
+            flex-direction: column;
+        }
+
         .text{
             // border:@items;
             width:45%;
+
+            @media @phone{
+                width:90%;
+                margin-bottom: 5%;
+            }
         }
 
         h2{
@@ -64,9 +91,19 @@ body div{
         border-bottom: 1px dashed black;
         margin-bottom: 3%;
 
+        @media @phone{
+            flex-direction: column;
+            margin-bottom: 8%;
+        }
+
         .text{
             // border:@items;
             width:45%;
+
+            @media @phone{
+                width:90%;
+                margin-bottom: 5%;
+            }
         }
 
         h2{
@@ -84,6 +121,11 @@ body div{
         color: white;
         border-radius: 2rem;
         transition: background-color .5s;
+
+        @media @phone{
+            margin-bottom: 5%;
+            border-radius: 1rem;
+        }
         
         &:hover{
             color: @magenta;

@@ -171,6 +171,11 @@ header .navBar {
     flex-direction: column;
   }
 }
+@media (max-width: 500px) {
+  header .navBar {
+    position: relative;
+  }
+}
 header .navBar h1 {
   width: 100%;
   margin: 2%;
@@ -180,6 +185,13 @@ header .navBar h1 {
     margin: 0 auto;
     text-align: center;
     padding: 2%;
+  }
+}
+@media (max-width: 500px) {
+  header .navBar h1 {
+    border-bottom: 1px dashed black;
+    background: #016379;
+    color: white;
   }
 }
 header .navBar nav {
@@ -197,6 +209,11 @@ header .navBar nav {
     padding: 2%;
   }
 }
+@media (max-width: 500px) {
+  header .navBar nav {
+    flex-direction: column;
+  }
+}
 header .navBar nav a {
   text-decoration: none;
   color: #000;
@@ -205,6 +222,11 @@ header .navBar nav a {
 header .navBar nav a:hover {
   color: #d71c98;
   transition: color 0.5s;
+}
+@media (max-width: 500px) {
+  header .navBar nav a {
+    margin: 3%;
+  }
 }
 footer {
   padding-top: 2%;
@@ -224,6 +246,11 @@ footer .navBar nav {
   justify-content: space-around;
   width: 70%;
   padding: 1%;
+}
+@media (max-width: 500px) {
+  footer .navBar nav {
+    display: none;
+  }
 }
 footer .navBar nav a {
   color: #fff;
@@ -252,9 +279,20 @@ body div {
 .homeContainer .confetti {
   width: 100%;
 }
+@media (max-width: 500px) {
+  .homeContainer .confetti {
+    display: none;
+  }
+}
 .homeContainer .pic {
   width: 45%;
   border-radius: 2rem;
+}
+@media (max-width: 500px) {
+  .homeContainer .pic {
+    width: 90%;
+    margin: 5% 0;
+  }
 }
 .homeContainer .topcontainer {
   display: flex;
@@ -264,8 +302,19 @@ body div {
   border-top: 1px dashed black;
   border-bottom: 1px dashed black;
 }
+@media (max-width: 500px) {
+  .homeContainer .topcontainer {
+    flex-direction: column;
+  }
+}
 .homeContainer .topcontainer .text {
   width: 45%;
+}
+@media (max-width: 500px) {
+  .homeContainer .topcontainer .text {
+    width: 90%;
+    margin-bottom: 5%;
+  }
 }
 .homeContainer .topcontainer h2 {
   margin-bottom: 5%;
@@ -278,8 +327,19 @@ body div {
   padding: 3% 0;
   border-bottom: 1px dashed black;
 }
+@media (max-width: 500px) {
+  .homeContainer .midcontainer {
+    flex-direction: column;
+  }
+}
 .homeContainer .midcontainer .text {
   width: 45%;
+}
+@media (max-width: 500px) {
+  .homeContainer .midcontainer .text {
+    width: 90%;
+    margin-bottom: 5%;
+  }
 }
 .homeContainer .midcontainer h2 {
   margin-bottom: 5%;
@@ -292,8 +352,20 @@ body div {
   border-bottom: 1px dashed black;
   margin-bottom: 3%;
 }
+@media (max-width: 500px) {
+  .homeContainer .botcontainer {
+    flex-direction: column;
+    margin-bottom: 8%;
+  }
+}
 .homeContainer .botcontainer .text {
   width: 45%;
+}
+@media (max-width: 500px) {
+  .homeContainer .botcontainer .text {
+    width: 90%;
+    margin-bottom: 5%;
+  }
 }
 .homeContainer .botcontainer h2 {
   margin-bottom: 5%;
@@ -307,6 +379,12 @@ body div {
   color: white;
   border-radius: 2rem;
   transition: background-color 0.5s;
+}
+@media (max-width: 500px) {
+  .homeContainer .button {
+    margin-bottom: 5%;
+    border-radius: 1rem;
+  }
 }
 .homeContainer .button:hover {
   color: #d71c98;
