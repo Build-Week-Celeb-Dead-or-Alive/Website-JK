@@ -450,6 +450,7 @@ body div {
 }
 .aboutContainer .team .person img {
   border-radius: 2rem;
+  max-width: 30%;
 }
 .aboutContainer .team .person .info {
   width: 50%;
