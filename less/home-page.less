@@ -32,8 +32,8 @@ body div{
         .flexbox();
         margin-top: 3%;
         padding:3% 0;
-        border-top: 1px dashed black;
-        border-bottom: 1px dashed black;
+        border-top: @dash;
+        border-bottom: @dash;
 
         @media @phone{
             flex-direction: column;
@@ -61,7 +61,7 @@ body div{
         .flexbox();
         flex-direction: row-reverse;
         padding: 3% 0;
-        border-bottom: 1px dashed black;
+        border-bottom: @dash;
 
         @media @phone{
             flex-direction: column;
@@ -88,7 +88,7 @@ body div{
         // border:@main;
         .flexbox();
         padding:3% 0;
-        border-bottom: 1px dashed black;
+        border-bottom: @dash;
         margin-bottom: 3%;
 
         @media @phone{
@@ -114,23 +114,19 @@ body div{
     }
 
     .button{
-        background: @magenta;
+        .btn-content(@magenta, white, background-color .5s, 2rem);
         margin: 0 auto;
         padding: 2% 5%;
         text-decoration: none;
-        color: white;
-        border-radius: 2rem;
-        transition: background-color .5s;
 
         @media @phone{
             margin-bottom: 5%;
             border-radius: 1rem;
+            .btn-content(@magenta, white, background-color .5s, 1rem);
         }
         
         &:hover{
-            color: @magenta;
-            background-color: white;
-            transition: background-color .5s;
+            .btn-content(white, @magenta, background-color .5s, 2rem);
         }
     }
 }

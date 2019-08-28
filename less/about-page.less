@@ -9,7 +9,7 @@
 .aboutContainer{
     width:90%;
     margin-top: 3%;
-    border-top: 1px dashed black;
+    border-top: @dash;
 
     h2{
         color:@magenta;
@@ -23,7 +23,7 @@
     }
 
     .team{
-        border-bottom: 1px dashed black;
+        border-bottom: @dash;
         .flexbox();
         flex-wrap: wrap;
         width:100%;
@@ -42,12 +42,11 @@
 
             @media @tablet{
                 flex-direction: column;
-                align-items: center;
             }
 
             @media @phone{
                 width:100%;
-                border-bottom: 1px dashed black;
+                border-bottom: @dash;
                 margin-bottom: 5%;
             }
     
