@@ -28,12 +28,43 @@ header .navBar{
         }
 
         @media @phone{
-            background-image: url("hollywood.jpg");
-            // background-color: black;
-            // color: white;
             background: @blue;
             color: white;
         }
+    }
+
+    .celeb{
+        // border:@main;
+        .flexbox();
+
+        @media @tablet{
+            width: 100%;
+        }
+
+        @media @phone{
+            width: 100%;
+        }
+
+        .cdoa{
+            // border:@main;
+            opacity: 0.7;
+            width:15%;
+
+            @media @tablet{
+                justify-content: space-between;
+                width: 10%;
+            }
+
+            @media @phone{
+                display: none;
+            }
+
+            h1{
+                border:@main;
+            }
+        }
+
+        
     }
 
     nav{

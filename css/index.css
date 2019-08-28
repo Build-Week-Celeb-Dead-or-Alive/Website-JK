@@ -189,10 +189,41 @@ header .navBar h1 {
 }
 @media (max-width: 500px) {
   header .navBar h1 {
-    background-image: url("hollywood.jpg");
     background: #016379;
     color: white;
   }
+}
+header .navBar .celeb {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  header .navBar .celeb {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  header .navBar .celeb {
+    width: 100%;
+  }
+}
+header .navBar .celeb .cdoa {
+  opacity: 0.7;
+  width: 15%;
+}
+@media (max-width: 800px) {
+  header .navBar .celeb .cdoa {
+    justify-content: space-between;
+    width: 10%;
+  }
+}
+@media (max-width: 500px) {
+  header .navBar .celeb .cdoa {
+    display: none;
+  }
+}
+header .navBar .celeb .cdoa h1 {
+  border: 2px solid red;
 }
 header .navBar nav {
   width: 100%;
@@ -390,10 +421,6 @@ body div {
   color: #d71c98;
   background-color: white;
   transition: background-color 0.5s;
-}
-.cdoa {
-  opacity: 0.7;
-  width: 7%;
 }
 .lights {
   width: 100%;
