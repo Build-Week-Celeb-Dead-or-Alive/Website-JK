@@ -451,7 +451,6 @@ body div {
   }
 }
 .aboutContainer .team {
-  border-bottom: 1px dashed black;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
