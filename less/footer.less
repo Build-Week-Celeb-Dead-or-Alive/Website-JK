@@ -1,0 +1,44 @@
+footer{
+    // border:@main;
+    padding-top: 2%;
+    background:@blue;
+    margin-top: 3%;
+
+    .navBar{
+        // border:2px solid rgb(255, 238, 0);
+        .flexbox();
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        nav{
+            .flexbox();
+            justify-content: space-around;
+            // border:@component;
+            width:70%;
+            padding: 1%;
+
+            @media @phone{
+                display: none;
+            }
+
+            a{
+                color: #fff;
+                text-decoration: none;
+                // border:@items;
+                transition: color .5s;
+                &:hover{
+                    color: @magenta;
+                    // text-decoration: overline;
+                    transition: color .5s;
+                }
+            }
+        }
+        .copyright{
+            // border:@component;
+            color: #fff;
+            padding: 1%;
+            margin-top: 2%;
+        }
+    }
+}

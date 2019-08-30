@@ -1,0 +1,133 @@
+body div{
+    margin: 0 auto;
+    width:90%;
+}
+
+.homeContainer{
+    // border:@main;
+    width:100%;
+    .flexbox();
+    flex-direction: column;
+
+    .confetti{
+        width:100%;
+
+        @media @phone{
+            display: none;
+        }
+    }
+
+    .pic{
+    width: 45%;
+    border-radius: 2rem;
+
+    @media @phone{
+        width:90%;
+        margin: 5% 0;
+    }
+    }
+
+    .topcontainer{
+        // border:@main;
+        .flexbox();
+        margin-top: 3%;
+        padding:3% 0;
+        border-top: @dash;
+        border-bottom: @dash;
+
+        @media @phone{
+            flex-direction: column;
+        }
+
+        .text{
+            // border:@items;
+            width:45%;
+
+            @media @phone{
+                width:90%;
+                margin-bottom: 5%;
+            }
+        }
+
+        h2{
+            // border:@items;
+            margin-bottom: 5%;
+            color: @magenta;
+        }
+    }
+
+    .midcontainer{
+        // border:@main;
+        .flexbox();
+        flex-direction: row-reverse;
+        padding: 3% 0;
+        border-bottom: @dash;
+
+        @media @phone{
+            flex-direction: column;
+        }
+
+        .text{
+            // border:@items;
+            width:45%;
+
+            @media @phone{
+                width:90%;
+                margin-bottom: 5%;
+            }
+        }
+
+        h2{
+            // border:@items;
+            margin-bottom: 5%;
+            color: @magenta;
+        }
+    }
+
+    .botcontainer{
+        // border:@main;
+        .flexbox();
+        padding:3% 0;
+        border-bottom: @dash;
+        margin-bottom: 3%;
+
+        @media @phone{
+            flex-direction: column;
+            margin-bottom: 8%;
+        }
+
+        .text{
+            // border:@items;
+            width:45%;
+
+            @media @phone{
+                width:90%;
+                margin-bottom: 5%;
+            }
+        }
+
+        h2{
+            // border:@items;
+            margin-bottom: 5%;
+            color: @magenta;
+        }
+    }
+
+    .button{
+        .btn-content(@magenta, white, background-color .5s, 2rem);
+        margin: 0 auto;
+        padding: 2% 5%;
+        text-decoration: none;
+
+        @media @phone{
+            margin-bottom: 5%;
+            border-radius: 1rem;
+            .btn-content(@magenta, white, background-color .5s, 1rem);
+        }
+        
+        &:hover{
+            .btn-content(white, @magenta, background-color .5s, 2rem);
+        }
+    }
+}
+

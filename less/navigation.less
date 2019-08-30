@@ -1,0 +1,105 @@
+header .navBar{
+    // border: @main;
+    .flexbox();
+    align-items: flex-end;
+    max-width: 100%;
+    background:rgba(255, 255, 255, 0.671);
+    position:fixed;
+    width: 100%;
+
+    @media @tablet{
+        flex-direction: column;
+    }
+
+    @media @phone{
+        position: relative;
+        // 
+    }
+
+    h1{
+        // border: @component;
+        width: 100%;
+        margin: 2%;
+
+        @media @tablet{
+            margin: 0 auto;
+            text-align: center;
+            padding: 2%;
+        }
+
+        @media @phone{
+            background: @blue;
+            color: white;
+        }
+    }
+
+    .celeb{
+        // border:@main;
+        .flexbox();
+
+        @media @tablet{
+            width: 100%;
+        }
+
+        @media @phone{
+            width: 100%;
+        }
+
+        .cdoa{
+            // border:@main;
+            opacity: 0.7;
+            width:15%;
+
+            @media @tablet{
+                justify-content: space-between;
+                width: 10%;
+            }
+
+            @media @phone{
+                display: none;
+            }
+
+            h1{
+                border:@main;
+            }
+        }
+
+        
+    }
+
+    nav{
+        // border: @component;
+        width: 100%;
+        margin-left: 15%;
+        margin-bottom: 2%;
+        .flexbox();
+        flex-direction: row;
+        justify-content: space-around;
+
+        @media @tablet{
+            margin:0;
+            padding: 2%;
+        }
+
+        @media @phone{
+            flex-direction: column;
+        }
+
+        a{
+            // border: @items;
+            text-decoration: none;
+            color:#000;
+            transition: color .5s;
+            &:hover{
+                color: @magenta;
+                // text-decoration: overline;
+                transition: color .5s;
+            }
+
+            @media @phone{
+                margin: 3%;
+            }
+
+        }
+    }
+}
